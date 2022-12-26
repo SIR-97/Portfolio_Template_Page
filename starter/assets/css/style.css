@@ -1,0 +1,88 @@
+/* created variables for colors that I will use */
+:root {
+  --light_grey: #e6f2ff;
+  --sky-blue: #9fbfdf;
+  --ocean-blue:#3973ac;
+}
+
+/* remove defualt CSS style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* this is the general style setting for the body */
+body {
+  color: var(--sky-blue);
+  background-color: var(--light_grey);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+/* Header styling including nav styling */
+header {
+  background-color: var(--sky-blue);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+header div {
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+  
+}
+
+header h1 {
+  color: black;
+  font-size: 40px;
+  font-weight: bold;
+  background-color: var(--ocean-blue);
+  padding: 40px;
+  border: 5px solid black;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  list-style: none;
+}
+
+header nav {
+  margin: 20px;
+}
+
+header nav ul li a {
+  padding: 8px;
+  font-size: 28px;
+  margin: 20px 20px 0 0;
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+  background: var(--sky-blue);
+  color: black;
+  border-radius: 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
