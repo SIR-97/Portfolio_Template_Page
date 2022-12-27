@@ -3,6 +3,7 @@
   --light_grey: #e6f2ff;
   --sky-blue: #9fbfdf;
   --ocean-blue:#3973ac;
+  --black:black;
 }
 
 /* remove defualt CSS style */
@@ -14,8 +15,8 @@
 
 /* this is the general style setting for the body */
 body {
-  color: var(--sky-blue);
-  background-color: var(--light_grey);
+  color: var(--black);
+  background-color: var(--ocean-blue);
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
@@ -26,7 +27,7 @@ header {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 20px;
+  padding: 10px;
 }
 
 header div {
@@ -35,17 +36,17 @@ header div {
 }
 
 header h1 {
-  color: black;
-  font-size: 40px;
+  color: var(--black);
+  font-size: 30px;
   font-weight: bold;
   background-color: var(--ocean-blue);
-  padding: 40px;
-  border: 5px solid black;
-}
+  padding: 15px;
+  border: 5px solid var(--black);
+ }
 
 header a {
   text-decoration: none;
-  color: black;
+  color: var(--black);
   font-size: 20px;
   font-weight: bolder;
 }
@@ -69,20 +70,209 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-  background: var(--sky-blue);
-  color: black;
+  background: var(--black);
+  color: var(--ocean-blue);
   border-radius: 15px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
+
+/* start styling hero section */
+
+.hero-banner { 
+  background-color: white;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
-p {
-  margin: 0;
+.hero-banner img {
+  height: 180px;
+  position:absolute;
+  left: 495px;
+  top: 95px;
 }
+
+.hero-banner h2 {
+  color: var(--black);
+  font-size: 40px;
+  font-weight: bold;
+  position:absolute;
+  left: 695px;
+  top: 170px;
+}
+
+/* End styling hero section */
+
+/* Start styling about me section */
+
+.title {
+  border-right: 5px solid var(--black);
+  min-height: 120%;
+  text-align: right;
+  padding-right: 60px;
+  min-width: 20%;
+  max-width: 20%;
+}
+
+.title h2 {
+  position: absolute;
+  left: 60px;
+  font-size: 34px;
+  color: var(--black);
+}
+
+.about-me {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding-top: 20px;
+}
+
+.about-me div {
+  font-size: 20px;
+  padding: 0 30px;
+  line-height: 1.4;
+  width: 90%;
+  text-align: justify;
+  color: var(--black);
+}
+
+/* End styling about me section */
+
+/* Started my work section */
+
+.my-work {
+  padding: 40px 0%;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--light_grey);
+}
+
+.my-work h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 34px;
+  color: var(--black);
+}
+
+.grid-background {
+  width: 80%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+.projects-grid {
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.projects-grid a {
+  border: solid;
+  color: var(--black);
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-decoration: none;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+  
+}
+
+.project-label {
+  background-color: var(--ocean-blue);
+  color: var(--black);
+  padding: 5px;
+}
+
+.projects-grid a:hover {
+  opacity: 1.5;
+}
+
+.surf-report{
+  grid-column: 1/3;
+    grid-row: span 2;
+    background-image: url("./images/02-portfolio-4.jpg");  
+}
+
+.LED-wall {
+  background-image: url("./images/02-portfolio-1.jpg");
+  
+}
+
+.calculator {
+  background-image: url("./images/02-portfolio-2.jpg");
+  background-position: 60% 50%;
+}
+
+.pastel-puzzel {
+  background-image: url("./images/02-portfolio-3.jpg");
+}
+
+.run-buddy {
+  background-image: url("./images/02-run-buddy.jpg");
+}
+
+/* Ended stylung for my work section */
+
+/* Start styling for footer section */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  margin-bottom: 20px;
+  background-color: var(--ocean-blue);
+}
+
+.footer-background {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+#contact-list {
+  width: 60%;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-evenly;
+  align-content: center space-around;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+footer ul li {
+    font-weight: bold;
+
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: var(--black);
+  padding: 10px;
+  font-weight: bold;
+}
+
+footer ul li a:hover {
+  background: var(--black);
+  color: var(--ocean-blue);
+  border-radius: 15px;
+}
+/*  End styling for footer section */
+
+  
+
