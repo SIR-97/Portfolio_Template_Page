@@ -275,4 +275,100 @@ footer ul li a:hover {
 /*  End styling for footer section */
 
   
+/* Media query for tablet screens and smaller screens */
+@media screen and (max-width: 576px) {
+  header {
+      justify-content: center;
+      padding: 100px;
+  }
 
+  header nav ul {
+      min-height: 80px;
+  }
+
+  .hero-banner {
+      flex-direction: column;
+  }
+  header nav ul li a {
+    padding: 30px;
+    font-size: 28px;
+    margin: 20px 20px 0 0;
+    font-weight: bold;
+  }
+
+  .hero-banner h2 {
+    color: var(--black);
+    font-size: 40px;
+    font-weight: bold;
+    position:absolute;
+    left: 350px;
+    top: 485px;
+  }
+
+  .hero-banner img {
+      height: 180px;
+      position:absolute;
+      left: 200px;
+      top: 445px;
+  }
+
+  .about-me {
+      flex-direction: column;
+  }
+
+  .title div {
+    align-content: left;
+  }
+
+  .title h2 {
+      border-bottom: 5px none;
+      border-right: none;
+      text-align: center;
+      min-width: 100%;
+      max-width: 100%;
+      padding: 0px;
+  }
+
+  .about-me div {
+      font-size: 16px;
+      line-height: 1.6;
+      width: 80%;
+      padding: 40px;
+      align-self: left;
+  }
+
+  .my-work h2 {
+      flex-direction: column;
+      padding: 30px 0;
+  }
+
+  .grid-background {
+      width: 100%;
+      padding: 80px;
+  }
+  
+  .projects-grid {
+      width: 80%;
+  }
+
+  footer h2 {
+      flex-direction: column;
+      
+  }
+
+  footer ul {
+      flex-direction: column ;
+      padding-top: 10px ;
+  }
+
+  .footer-background {
+      width: 100%;
+  }
+
+  footer ul li a {
+      padding: 20px;
+      text-align: center;
+      font-size: 18px;
+  }
+  
+}
