@@ -316,6 +316,10 @@ footer ul li a:hover {
       flex-direction: column;
   }
 
+  .title {
+    border-right: none;
+  }
+
   .title div {
     align-content: left;
   }
